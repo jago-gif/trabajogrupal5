@@ -18,6 +18,22 @@ public class Bebida extends Producto{
         this.alcohol=alcohol;
     }
 
+    public int getFormato() {
+        return formato;
+    }
+
+    public void setFormato(int formato) {
+        this.formato = formato;
+    }
+
+    public boolean isAlcohol() {
+        return alcohol;
+    }
+
+    public void setAlcohol(boolean alcohol) {
+        this.alcohol = alcohol;
+    }
+
     @Override
     public String toString() {
         return "Bebida{" +
