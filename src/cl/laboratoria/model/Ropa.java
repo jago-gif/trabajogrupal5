@@ -50,7 +50,7 @@ public class Ropa extends Producto{
 
     @Override
     public String toString() {
-        return "Ropa{" +
+        return "Ropa     " +
                 "id=" + id +
                 ", categoria='" + categoria + '\'' +
                 ", precio=" + precio +
@@ -58,7 +58,6 @@ public class Ropa extends Producto{
                 ", descripcion='" + descripcion + '\'' +
                 ", categoriaRopa='" + categoriaRopa + '\'' +
                 ", talla='" + talla + '\'' +
-                ", color='" + color + '\'' +
-                '}';
+                ", color='" + color + '\'';
     }
 }

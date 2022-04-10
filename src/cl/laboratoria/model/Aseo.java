@@ -29,13 +29,12 @@ public class Aseo extends Producto{
 
     @Override
     public String toString() {
-        return "Aseo{" +
+        return "Aseo     " +
                 "tipoDeAseo='" + tipoDeAseo + '\'' +
                 ", id=" + id +
                 ", categoria='" + categoria + '\'' +
                 ", precio=" + precio +
                 ", nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
+                ", descripcion='" + descripcion + '\'' ;
     }
 }

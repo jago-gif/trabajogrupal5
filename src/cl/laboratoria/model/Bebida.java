@@ -36,14 +36,13 @@ public class Bebida extends Producto{
 
     @Override
     public String toString() {
-        return "Bebida{" +
+        return "Bebida   " +
                 "formato=" + formato +
                 ", alcohol=" + alcohol +
                 ", id=" + id +
                 ", categoria='" + categoria + '\'' +
                 ", precio=" + precio +
                 ", nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
+                ", descripcion='" + descripcion + '\'' ;
     }
 }
