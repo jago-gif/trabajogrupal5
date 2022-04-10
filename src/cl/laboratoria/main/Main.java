@@ -26,8 +26,15 @@ public class Main implements Imain{
                 false));
         listaBebida.add(new Bebida("Bebida",1500,"cachantun","agua mineral + granada",
                 1500,false));
-
+        System.out.println("Bienvenido a nuestra tienda");
         do {
+            System.out.println("¿A que categoria desea ingresar?");
+            System.out.println("[1]         Agregar nuevos productos");
+            System.out.println("[2]         Listado de productos");
+            System.out.println("[3]         Editar productos");
+            System.out.println("[4]         Eliminar productos");
+            System.out.println("[0]         Salis del sistema");
+
             String ingresar = scan.nextLine();
             try {
                 menu2 = Integer.parseInt(ingresar);
@@ -37,7 +44,8 @@ public class Main implements Imain{
             }
             switch (menu2){
                 case OPCION_MENU_AGREGAR:{
-
+                        Sistema agrega = new Sistema();
+                        agrega.agregarProducto(listaAseo, listaRopa, listaBebida);
                     break;
                 }
                 case OPCION_MENU_LISTAR:{
@@ -51,6 +59,8 @@ public class Main implements Imain{
                     break;
                 }
                 case OPCION_MENU_ELIMINAR:{
+                    Sistema eliminar = new Sistema();
+                    eliminar.eliminarProducto(listaAseo, listaRopa, listaBebida);
 
                 }
             }
